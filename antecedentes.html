@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. Antecedentes</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="brand">Thesis Project</div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html"><span class="nav-number">01</span>Contextualización</a></li>
+            <li class="nav-item"><a href="problema.html"><span class="nav-number">02</span>Problema General</a></li>
+            <li class="nav-item"><a href="antecedentes.html"><span class="nav-number">03</span>Antecedentes</a></li>
+            <li class="nav-item"><a href="objetivo.html"><span class="nav-number">04</span>Objetivo General</a></li>
+            <li class="nav-item"><a href="meto.html"><span class="nav-number">05</span>Metodología</a></li>
+            <li class="nav-item"><a href="justifi.html"><span class="nav-number">06</span>Justificación</a></li>
+            <li class="nav-item"><a href="producto.html"><span class="nav-number">07</span>Producto esperado</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="slide-container">
+            <h1>3. Antecedentes</h1>
+
+            <h2>3.1. Antecedentes internacionales del uso de Random Forest en predicción delictiva</h2>
+            <p>
+                La aplicación de algoritmos de machine learning, particularmente Random Forest, en la predicción
+                criminal ha experimentado un desarrollo significativo. El trabajo seminal de <span
+                    class="citation">Breiman (2001)</span> estableció las bases teóricas del algoritmo, demostrando su
+                capacidad para manejar conjuntos de datos complejos mediante la construcción de múltiples árboles de
+                decisión.
+            </p>
+
+            <div class="figure" id="fig1"></div>
+
+            <p>
+                En el contexto específico de predicción criminal, el estudio de <span class="citation">Alves et al.
+                    (2018)</span> representa un hito metodológico al utilizar Random Forest Regressor para predecir
+                crimen en áreas urbanas, alcanzando una precisión del <span class="highlight">97% en la predicción de
+                    homicidios</span>.
+            </p>
+
+            <div class="stats-box">
+                <p><strong>Estudios internacionales destacados:</strong></p>
+                <p>• <strong>Chicago, EE.UU.:</strong> Catlett et al. (2019) - Predicción espacio-temporal con error
+                    MAPE ~10%</p>
+                <p>• <strong>Estados Unidos:</strong> Universidad de Chicago (2022) - 90% precisión una semana
+                    adelantada</p>
+                <p>• <strong>Global:</strong> Bediroglu et al. (2024) - R²=0.78 para robos domiciliarios en Turquía</p>
+            </div>
+
+            <h2>3.2. Antecedentes nacionales y regionales</h2>
+            <p>
+                En el contexto peruano, la aplicación de inteligencia artificial para seguridad ciudadana es incipiente.
+                El INEI ha desarrollado el Sistema Integrado de Estadísticas de la Criminalidad (Data-Crim), pero
+                mantiene un enfoque descriptivo.
+            </p>
+
+            <div class="critical-box">
+                <p><strong>Limitaciones actuales en Perú:</strong></p>
+                <p>• Gran cantidad de datos descriptivos pero nula capacidad predictiva en sistemas oficiales.</p>
+                <p>• Fragmentación institucional y falta de continuidade en políticas de seguridad.</p>
+            </div>
+
+            <div class="figure" id="fig3"></div>
+
+            <h2>3.3. Brechas identificadas</h2>
+            <p>
+                El análisis de la literatura revela brechas críticas: geográfica (pocos estudios en Latinoamérica),
+                metodológica (falta de adaptación a ciudades turísticas intermedias), y de aplicación práctica
+                (desconexión entre academia y policía). Esta investigación busca llenar estos vacíos implementando una
+                solución real para Cusco.
+            </p>
+        </div>
+    </main>
+
+    <div class="slide-controls">
+        <a href="problema.html" class="btn-nav"><i class="fas fa-chevron-left"></i></a>
+        <a href="objetivo.html" class="btn-nav"><i class="fas fa-chevron-right"></i></a>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        const placeholder = 'https://via.placeholder.com/800x400';
+        document.getElementById('fig1').innerHTML = `
+            <img src="${placeholder}" alt="Diagrama Random Forest">
+            <div class="figure-caption"><strong>Figura 1.</strong> Arquitectura del algoritmo Random Forest (Breiman, 2001).</div>
+        `;
+        document.getElementById('fig3').innerHTML = `
+            <img src="${placeholder}" alt="Tesis Peruanas">
+            <div class="figure-caption"><strong>Figura 3.</strong> Panorama de investigaciones peruanas en ML (2020-2025).</div>
+        `;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6. Justificación</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="brand">Thesis Project</div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html"><span class="nav-number">01</span>Contextualización</a></li>
+            <li class="nav-item"><a href="problema.html"><span class="nav-number">02</span>Problema General</a></li>
+            <li class="nav-item"><a href="antecedentes.html"><span class="nav-number">03</span>Antecedentes</a></li>
+            <li class="nav-item"><a href="objetivo.html"><span class="nav-number">04</span>Objetivo General</a></li>
+            <li class="nav-item"><a href="meto.html"><span class="nav-number">05</span>Metodología</a></li>
+            <li class="nav-item"><a href="justifi.html"><span class="nav-number">06</span>Justificación</a></li>
+            <li class="nav-item"><a href="producto.html"><span class="nav-number">07</span>Producto esperado</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="slide-container">
+            <h1>6. Justificación</h1>
+
+            <p>
+                La presente investigación se fundamenta en la necesidad urgente de herramientas tecnológicas para la
+                seguridad ciudadana en Cusco. Su relevancia se analiza desde las siguientes dimensiones:
+            </p>
+
+            <h3>6.1. Justificación Teórica</h3>
+            <p>
+                Contribución al conocimiento científico mediante la <strong>adaptación de algoritmos de Random
+                    Forest</strong> en contextos de ciudades intermedias andinas. Llena una brecha de aplicación
+                práctica documentada en literatura internacional.
+            </p>
+
+            <h3>6.2. Justificación Práctica</h3>
+            <div class="critical-box">
+                <p><strong>Datos Críticos:</strong> Cusco distrito registró 2,831 delitos en 2022. La victimización real
+                    es alta, pero el despliegue policial carece de herramientas de inteligencia predictiva.</p>
+            </div>
+            <p>
+                El sistema permitirá optimizar patrullajes, reduciendo tiempos de respuesta y previniendo delitos en
+                zonas calientes identificadas.
+            </p>
+
+            <h3>6.3. Justificación Social y Turística</h3>
+            <div class="stats-box">
+                <p>Impacto directo en el turismo: Cusco recibe >3 millones de turistas. La inseguridad afecta la imagen
+                    internacional y la economía local. Proteger al turista es proteger el motor económico de la región.
+                </p>
+            </div>
+
+            <h3>6.4. Justificación Institucional</h3>
+            <p>
+                Alineado con las líneas de investigación de la UAC y con potencial de transferencia tecnológica a la PNP
+                y Municipalidades mediante convenios existentes.
+            </p>
+
+            <h3>6.5. Justificación Metodológica</h3>
+            <p>
+                Integración innovadora de Scrum (gestión), CRISP-DM (ciencia de datos) y desarrollo Full-Stack,
+                garantizando un producto de calidad profesional y escalable.
+            </p>
+
+            <div class="figure" id="fig1"></div>
+        </div>
+    </main>
+
+    <div class="slide-controls">
+        <a href="meto.html" class="btn-nav"><i class="fas fa-chevron-left"></i></a>
+        <a href="producto.html" class="btn-nav"><i class="fas fa-chevron-right"></i></a>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        const placeholder = 'https://via.placeholder.com/800x400';
+        document.getElementById('fig1').innerHTML = `
+            <img src="${placeholder}" alt="Justificación e Impacto">
+            <div class="figure-caption"><strong>Figura 1.</strong> Dimensiones de impacto del proyecto: Social, Económico y Tecnológico.</div>
+        `;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. Objetivo General</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="brand">Thesis Project</div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html"><span class="nav-number">01</span>Contextualización</a></li>
+            <li class="nav-item"><a href="problema.html"><span class="nav-number">02</span>Problema General</a></li>
+            <li class="nav-item"><a href="antecedentes.html"><span class="nav-number">03</span>Antecedentes</a></li>
+            <li class="nav-item"><a href="objetivo.html"><span class="nav-number">04</span>Objetivo General</a></li>
+            <li class="nav-item"><a href="meto.html"><span class="nav-number">05</span>Metodología</a></li>
+            <li class="nav-item"><a href="justifi.html"><span class="nav-number">06</span>Justificación</a></li>
+            <li class="nav-item"><a href="producto.html"><span class="nav-number">07</span>Producto esperado</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="slide-container">
+            <h1>4. Objetivo General y Objetivos Específicos</h1>
+
+            <p>
+                La formulación de objetivos establece con precisión las metas que se pretenden alcanzar. En el contexto
+                de la presente investigación, los objetivos han sido diseñados alineados con las directrices nacionales
+                de SUNEDU para trabajos de investigación aplicada en ciencias de la computación.
+            </p>
+
+            <h3>4.1. Objetivo General</h3>
+            <div class="critical-box">
+                <p>Implementar un modelo de Random Forest entrenado con datos históricos de criminalidad y variables
+                    geoespaciales para determinar y visualizar en tiempo real las zonas de alto riesgo delictivo en la
+                    ciudad del Cusco durante el año 2025, con el propósito de apoyar la toma de decisiones preventivas
+                    de las autoridades.</p>
+            </div>
+
+            <h3>4.2. Objetivos Específicos</h3>
+            <div class="stats-box">
+                <ol style="margin-left: 20px;">
+                    <li style="margin-bottom: 10px;"><strong>Recolectar y consolidar datasets históricos
+                            (2018-2025)</strong> de fuentes oficiales (INEI, PNP, Serenazgo).</li>
+                    <li style="margin-bottom: 10px;"><strong>Diseñar pipeline de preprocesamiento y limpieza</strong> de
+                        datos con enriquecimiento geoespacial.</li>
+                    <li style="margin-bottom: 10px;"><strong>Entrenar, validar y optimizar modelo Random Forest</strong>
+                        evaluando métricas de precisión, recall y F1-score.</li>
+                    <li style="margin-bottom: 10px;"><strong>Desarrollar aplicación web "CuscoSeguro"</strong> (Node.js
+                        + React + Mapbox) para visualización de riesgos.</li>
+                    <li style="margin-bottom: 10px;"><strong>Integrar modelo en backend</strong> mediante API REST para
+                        predicciones dinámicas.</li>
+                    <li style="margin-bottom: 10px;"><strong>Evaluar efectividad</strong> mediante pruebas de usuario
+                        con autoridades locales.</li>
+                </ol>
+            </div>
+
+            <div class="figure" id="fig1"></div>
+        </div>
+    </main>
+
+    <div class="slide-controls">
+        <a href="antecedentes.html" class="btn-nav"><i class="fas fa-chevron-left"></i></a>
+        <a href="meto.html" class="btn-nav"><i class="fas fa-chevron-right"></i></a>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        const placeholder = 'https://via.placeholder.com/800x400';
+        document.getElementById('fig1').innerHTML = `
+            <img src="${placeholder}" alt="Esquema de Objetivos">
+            <div class="figure-caption"><strong>Figura 1.</strong> Alineación de objetivos con el proceso de desarrollo e investigación.</div>
+        `;
+    </script>
+</body>
+
+</html>

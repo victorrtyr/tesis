@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5. Metodología</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="brand">Thesis Project</div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html"><span class="nav-number">01</span>Contextualización</a></li>
+            <li class="nav-item"><a href="problema.html"><span class="nav-number">02</span>Problema General</a></li>
+            <li class="nav-item"><a href="antecedentes.html"><span class="nav-number">03</span>Antecedentes</a></li>
+            <li class="nav-item"><a href="objetivo.html"><span class="nav-number">04</span>Objetivo General</a></li>
+            <li class="nav-item"><a href="meto.html"><span class="nav-number">05</span>Metodología</a></li>
+            <li class="nav-item"><a href="justifi.html"><span class="nav-number">06</span>Justificación</a></li>
+            <li class="nav-item"><a href="producto.html"><span class="nav-number">07</span>Producto esperado</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="slide-container">
+            <h1>5. Metodología</h1>
+
+            <p>
+                Esta sección describe el marco metodológico empleado: enfoque cuantitativo, tipo aplicada, diseño no
+                experimental. Alineado con estándares internacionales y las directrices de la Universidad Andina del
+                Cusco.
+            </p>
+
+            <h3>5.1. Enfoque y Tipo de Investigación</h3>
+            <div class="stats-box">
+                <p><strong>Tipo:</strong> Aplicada (solución tecnológica práctica).</p>
+                <p><strong>Enfoque:</strong> Cuantitativo (uso de datos numéricos y algoritmos).</p>
+                <p><strong>Diseño:</strong> No experimental, descriptivo-correlacional y predictivo.</p>
+            </div>
+
+            <h3>5.2. Metodología de Desarrollo: Scrum Adaptado</h3>
+            <p>
+                Se adoptó el marco ágil Scrum con <strong>5 sprints de 2 semanas</strong>.
+            </p>
+            <div class="figure" id="figScrum"></div>
+
+            <h3>5.3. Pipeline de Ciencia de Datos: CRISP-DM</h3>
+            <p>
+                Se sigue el estándar CRISP-DM de 6 fases: 1. Comprensión del negocio, 2. Comprensión de datos, 3.
+                Preparación, 4. Modelado (Random Forest), 5. Evaluación, 6. Despliegue.
+            </p>
+
+            <h3>5.4. Arquitectura Técnica</h3>
+            <p>Arquitectura moderna de 3 capas full-stack.</p>
+            <div class="figure" id="figArch"></div>
+
+            <div class="stats-box">
+                <p><strong>Stack Tecnológico:</strong></p>
+                <p>• <strong>Frontend:</strong> React, Mapbox GL JS</p>
+                <p>• <strong>Backend:</strong> Node.js, Express, Socket.io</p>
+                <p>• <strong>ML:</strong> Python, Scikit-learn, Flask</p>
+                <p>• <strong>DB:</strong> MySQL 8.0 (Geo-spatial indices)</p>
+            </div>
+
+            <h3>5.5. Consideraciones Éticas</h3>
+            <p>
+                Respeto estricto a la Ley de Protección de Datos Personales. Anonimización de datos de víctimas.
+            </p>
+        </div>
+    </main>
+
+    <div class="slide-controls">
+        <a href="objetivo.html" class="btn-nav"><i class="fas fa-chevron-left"></i></a>
+        <a href="justifi.html" class="btn-nav"><i class="fas fa-chevron-right"></i></a>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        const placeholder = 'https://via.placeholder.com/800x400';
+        document.getElementById('figScrum').innerHTML = `
+            <img src="${placeholder}" alt="Esquema Scrum">
+            <div class="figure-caption"><strong>Figura 1.</strong> Ciclo de vida de desarrollo con Scrum (5 Sprints).</div>
+        `;
+        document.getElementById('figArch').innerHTML = `
+            <img src="${placeholder}" alt="Arquitectura del Sistema">
+            <div class="figure-caption"><strong>Figura 2.</strong> Arquitectura Full-Stack de 'CuscoSeguro'.</div>
+        `;
+    </script>
+</body>
+
+</html>

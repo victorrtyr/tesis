@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7. Producto Esperado</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="brand">Thesis Project</div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html"><span class="nav-number">01</span>Contextualización</a></li>
+            <li class="nav-item"><a href="problema.html"><span class="nav-number">02</span>Problema General</a></li>
+            <li class="nav-item"><a href="antecedentes.html"><span class="nav-number">03</span>Antecedentes</a></li>
+            <li class="nav-item"><a href="objetivo.html"><span class="nav-number">04</span>Objetivo General</a></li>
+            <li class="nav-item"><a href="meto.html"><span class="nav-number">05</span>Metodología</a></li>
+            <li class="nav-item"><a href="justifi.html"><span class="nav-number">06</span>Justificación</a></li>
+            <li class="nav-item"><a href="producto.html"><span class="nav-number">07</span>Producto esperado</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="slide-container">
+            <h1>7. Producto Esperado: CuscoSeguro</h1>
+
+            <p>
+                El resultado final del proyecto es la plataforma integral <strong>"CuscoSeguro"</strong>, un sistema de
+                soporte a la toma de decisiones basado en inteligencia artificial geoespacial.
+            </p>
+
+            <h2>7.1. Características Principales</h2>
+
+            <div class="stats-box">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div>
+                        <h3 style="margin-top:0;">📡 Predicción en Tiempo Real</h3>
+                        <p>Visualización de zonas de riesgo con actualización dinámica basada en nuevos reportes y
+                            variables temporales (hora, día, festividades).</p>
+                    </div>
+                    <div>
+                        <h3 style="margin-top:0;">🗺️ Mapas de Calor Interactivos</h3>
+                        <p>Interfaz basada en Mapbox GL permite explorar el mapa de Cusco con capas de intensidad
+                            delictiva a nivel de manzana.</p>
+                    </div>
+                    <div>
+                        <h3 style="margin-top:0;">📊 Dashboard Analítico</h3>
+                        <p>Métricas clave: tasa de predicción, tipos de delitos más frecuentes por zona, y evolución
+                            temporal de hotspots.</p>
+                    </div>
+                    <div>
+                        <h3 style="margin-top:0;">📱 Acceso Multiplataforma</h3>
+                        <p>Diseño responsivo accesible desde tablets en patrulleros o centros de comando en escritorio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>7.2. Prototipos de la Interfaz</h2>
+
+            <div class="figure" id="fig1"></div>
+
+            <div class="critical-box">
+                <p><strong>Impacto Esperado:</strong> Se estima una mejora del <strong>25% en la eficiencia del
+                        patrullaje preventivo</strong> y una reducción de tiempos de respuesta en zonas críticas.</p>
+            </div>
+
+            <h2>7.3. Entregables Técnicos</h2>
+            <ul style="margin-left: 20px; line-height: 1.8;">
+                <li>Código fuente del modelo Random Forest (Python/Scikit-learn).</li>
+                <li>API REST documentada (Swagger/OpenAPI).</li>
+                <li>Aplicación Web desplegada en entorno de producción.</li>
+                <li>Manuales de usuario y técnico.</li>
+                <li>Dataset consolidado y limpio de criminalidad en Cusco (2018-2025).</li>
+            </ul>
+
+        </div>
+    </main>
+
+    <div class="slide-controls">
+        <a href="justifi.html" class="btn-nav"><i class="fas fa-chevron-left"></i></a>
+        <a href="index.html" class="btn-nav"><i class="fas fa-undo"></i></a> <!-- Loop back to start -->
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        const placeholder = 'https://via.placeholder.com/800x400';
+        document.getElementById('fig1').innerHTML = `
+            <img src="${placeholder}" alt="Mockup de CuscoSeguro">
+            <div class="figure-caption"><strong>Figura 1.</strong> Mockup de la interfaz principal mostrando el mapa de calor de riesgo predictivo.</div>
+        `;
+    </script>
+</body>
+
+</html>

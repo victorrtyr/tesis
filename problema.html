@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. Problema General</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="brand">Thesis Project</div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html"><span class="nav-number">01</span>Contextualización</a></li>
+            <li class="nav-item"><a href="problema.html"><span class="nav-number">02</span>Problema General</a></li>
+            <li class="nav-item"><a href="antecedentes.html"><span class="nav-number">03</span>Antecedentes</a></li>
+            <li class="nav-item"><a href="objetivo.html"><span class="nav-number">04</span>Objetivo General</a></li>
+            <li class="nav-item"><a href="meto.html"><span class="nav-number">05</span>Metodología</a></li>
+            <li class="nav-item"><a href="justifi.html"><span class="nav-number">06</span>Justificación</a></li>
+            <li class="nav-item"><a href="producto.html"><span class="nav-number">07</span>Producto esperado</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="slide-container">
+            <h1>2. Problema General</h1>
+
+            <div class="critical-box">
+                <h3>Planteamiento del Problema</h3>
+                <p>
+                    ¿Cómo implementar un modelo de entrenamiento Random Forest efectivo para determinar zonas de alto
+                    riesgo en seguridad ciudadana en la ciudad del Cusco, considerando las limitaciones de los enfoques
+                    tradicionales de predicción criminal y la necesidad de optimizar el despliegue de recursos
+                    policiales limitados frente a tasas crecientes de victimización urbana?
+                </p>
+            </div>
+
+            <h2>2.1. Descripción del problema general de seguridad ciudadana en Perú y Cusco</h2>
+
+            <p>
+                El Perú enfrenta una crisis de seguridad ciudadana sin precedentes que amenaza el tejido social y el
+                desarrollo económico del país. Durante el período marzo-agosto 2025, <span class="highlight">el 25.8% de
+                    la población urbana de 15 años a más</span> fue víctima de algún hecho delictivo, representando un
+                incremento significativo respecto a períodos anteriores <span class="citation">(INEI, 2025a)</span>.
+                Esta situación se ve agravada por una percepción de inseguridad generalizada, donde <span
+                    class="highlight">el 85.6% de los ciudadanos urbanos</span> manifiesta temor a ser víctima de la
+                delincuencia en los próximos doce meses, evidenciando una crisis no solo objetiva sino también subjetiva
+                en la seguridad pública.
+            </p>
+
+            <div class="stats-box">
+                <p><strong>Crisis de seguridad nacional - Indicadores críticos 2025:</strong></p>
+                <p>• Victimización urbana nacional: <span class="highlight">25.8%</span> de la población afectada</p>
+                <p>• Percepción de inseguridad: <span class="highlight">85.6%</span> de ciudadanos con temor constante
+                </p>
+                <p>• Denuncias por extorsión (2021-2024): <span class="highlight">incremento de 5 veces</span></p>
+                <p>• Delitos informáticos: <span class="highlight">+200%</span> en el mismo período</p>
+                <p>• Tasa de denuncia efectiva: <span class="highlight">solo 15.2%</span> de víctimas reporta el delito
+                </p>
+            </div>
+
+            <p>
+                La tipología delictiva en el país exhibe una predominancia abrumadora de delitos contra el patrimonio,
+                que representan aproximadamente <span class="highlight">el 70% del total de denuncias
+                    registradas</span>. Esta distribución refleja no solo la naturaleza económica de la criminalidad
+                predominante, sino también las vulnerabilidades estructurales del sistema de prevención y control del
+                crimen.
+            </p>
+
+            <div class="figure" id="fig1"></div>
+
+            <p>
+                En la región de Cusco, la situación adquiere características particularmente alarmantes. Durante el
+                semestre enero-junio 2022, el distrito de Cusco registró <span class="highlight">2,831 delitos</span>,
+                cifra que superó en <span class="highlight">47.2%</span> a Santiago, el segundo distrito con mayor
+                incidencia criminal. Proyecciones actualizadas para 2025 sitúan la victimización en Cusco en
+                aproximadamente <span class="highlight">34.8%</span>, significativamente por encima del promedio
+                nacional.
+            </p>
+
+            <h2>2.2. Impacto socioeconómico y en el turismo</h2>
+
+            <p>
+                El impacto económico de la inseguridad ciudadana en Cusco trasciende las pérdidas directas por robo y
+                hurto, afectando severamente al sector turístico que constituye el principal motor económico regional. A
+                cinco años de la pandemia, Cusco mantiene una brecha de <span class="highlight">187,000 turistas</span>
+                respecto a los niveles prepandemia, siendo la percepción de inseguridad uno de los factores críticos que
+                inhibe la recuperación completa del sector.
+            </p>
+
+            <div class="figure" id="fig2"></div>
+
+            <h2>2.3. Limitaciones en los enfoques tradicionales</h2>
+
+            <p>
+                Los enfoques tradicionales de prevención y control del crimen en el Perú exhiben deficiencias
+                estructurales críticas que limitan su efectividad. La más significativa es el <span
+                    class="highlight">subreporte masivo de delitos</span>: aproximadamente <span class="highlight">el
+                    84.8% de las víctimas no denuncia</span> los hechos delictivos, resultando en que solo el 15.2% de
+                los delitos llega a conocimiento oficial de las autoridades. Esta cifra oculta representa una "cifra
+                negra" de criminalidad que imposibilita análisis precisos.
+            </p>
+
+            <h2>2.4. Necesidad de machine learning para predicción de crimen</h2>
+
+            <p>
+                El aprendizaje automático (machine learning) representa un cambio paradigmático en la criminología
+                predictiva. Random Forest, en particular, ha demostrado superioridad consistente en tareas de predicción
+                criminal, alcanzando una precisión del <span class="highlight">97% en la predicción de homicidios</span>
+                en estudios referenciales.
+            </p>
+
+            <div class="figure" id="fig4"></div>
+
+        </div>
+    </main>
+
+    <div class="slide-controls">
+        <a href="index.html" class="btn-nav"><i class="fas fa-chevron-left"></i></a>
+        <a href="antecedentes.html" class="btn-nav"><i class="fas fa-chevron-right"></i></a>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        const imgPath = 'assets/images/';
+        const placeholder = 'https://via.placeholder.com/800x400';
+
+        document.getElementById('fig1').innerHTML = `
+            <img src="${placeholder}" alt="Distribución porcentual de tipos de delitos en Perú por categoría">
+            <div class="figure-caption">
+                <strong>Figura 1.</strong> Distribución de delitos por tipología en Perú 2023-2025.
+            </div>
+        `;
+
+        document.getElementById('fig2').innerHTML = `
+            <img src="${placeholder}" alt="Gráfico de brecha turística en Cusco y advertencias internacionales">
+            <div class="figure-caption">
+                <strong>Figura 2.</strong> Impacto de la inseguridad en el sector turístico cusqueño.
+            </div>
+        `;
+
+        document.getElementById('fig4').innerHTML = `
+            <img src="${placeholder}" alt="Comparación de precisión de Random Forest vs otros algoritmos ML">
+            <div class="figure-caption">
+                <strong>Figura 4.</strong> Desempeño comparativo de algoritmos de machine learning.
+            </div>
+        `;
+    </script>
+</body>
+
+</html>
