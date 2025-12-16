@@ -4,9 +4,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2. Problema General</title>
+    <title>2. Problema General - Tesis Random Forest Cusco 2025</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Estilos específicos solicitados para diapositiva de Problema - "Visual Impact Mode" */
+        :root {
+            --bg-slide: #E6F2FF;
+            --text-slide: #003366;
+            --alert-red: #D32F2F;
+            --stat-circle-bg: #FFFFFF;
+            --line-curve: #003366;
+        }
+
+        body {
+            background: var(--bg-slide) !important;
+            color: var(--text-slide) !important;
+            font-family: Arial, sans-serif !important;
+        }
+
+        /* Override general layout specific for this dense information slide */
+        .slide-container {
+            max-width: 1200px;
+            /* Wider for dashboard view */
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid #B3D9FF;
+            padding: 40px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: #003366 !important;
+            background: none !important;
+            -webkit-text-fill-color: initial !important;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            text-align: center;
+            border-bottom: 3px solid #003366;
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+        }
+
+        .authors {
+            text-align: center;
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-bottom: 30px;
+            color: #444;
+        }
+
+        /* GRID LAYOUTS */
+        .grid-2-col {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 25px;
+            margin-bottom: 30px;
+            align-items: center;
+        }
+
+        .grid-3-col {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        /* SHAPES & STATS */
+        .stat-circle {
+            background: var(--stat-circle-bg);
+            border: 4px solid var(--alert-red);
+            border-radius: 50%;
+            width: 160px;
+            height: 160px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+            margin: 0 auto;
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .stat-circle:hover {
+            transform: scale(1.05);
+        }
+
+        .stat-value {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: var(--alert-red);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            padding: 5px;
+            color: #333;
+        }
+
+        .alert-triangle-box {
+            clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+            background: #FFF;
+            border-top: 5px solid #FF9800;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* VISUALS */
+        .figure-modern {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #ccc;
+        }
+
+        .figure-modern img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .figure-caption-modern {
+            font-size: 0.8rem;
+            margin-top: 5px;
+            color: #555;
+            text-align: center;
+            font-style: italic;
+        }
+
+        /* FLOW & CONCEPTUAL */
+        .flow-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            position: relative;
+            border-left: 5px solid #003366;
+        }
+
+        .flow-step {
+            flex: 1;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .flow-line {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            right: 10%;
+            height: 2px;
+            background: #ccc;
+            z-index: 1;
+            border-bottom: 2px dashed #003666;
+        }
+
+        /* TEXT STYLING */
+        p.academic-text {
+            text-align: justify;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .highlight-text {
+            background-color: rgba(255, 255, 0, 0.2);
+            font-weight: bold;
+            padding: 0 4px;
+        }
+
+        /* ICONS */
+        .icon-lg {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #003366;
+        }
+
+        .references-section {
+            font-size: 0.75rem;
+            margin-top: 40px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,7 +207,8 @@
         <div class="brand">Thesis Project</div>
         <ul class="nav-menu">
             <li class="nav-item"><a href="index.html"><span class="nav-number">01</span>Contextualización</a></li>
-            <li class="nav-item"><a href="problema.html"><span class="nav-number">02</span>Problema General</a></li>
+            <li class="nav-item active"><a href="problema.html"><span class="nav-number">02</span>Problema General</a>
+            </li>
             <li class="nav-item"><a href="antecedentes.html"><span class="nav-number">03</span>Antecedentes</a></li>
             <li class="nav-item"><a href="objetivo.html"><span class="nav-number">04</span>Objetivo General</a></li>
             <li class="nav-item"><a href="meto.html"><span class="nav-number">05</span>Metodología</a></li>
@@ -25,94 +219,152 @@
 
     <main class="main-content">
         <div class="slide-container">
-            <h1>2. Problema General</h1>
+            <!-- Header -->
+            <header>
+                <h1>Implementación del Modelo de Entrenamiento Random Forest para Determinar Zonas de Alto Riesgo en
+                    Seguridad Ciudadana en la Ciudad del Cusco</h1>
+                <div class="authors">
+                    Autores: Tejada Castillo Gianluca y Curo Mendoza Zayin Victor – Universidad Andina del Cusco 2025
+                </div>
+            </header>
 
-            <div class="critical-box">
-                <h3>Planteamiento del Problema</h3>
-                <p>
-                    ¿Cómo implementar un modelo de entrenamiento Random Forest efectivo para determinar zonas de alto
-                    riesgo en seguridad ciudadana en la ciudad del Cusco, considerando las limitaciones de los enfoques
-                    tradicionales de predicción criminal y la necesidad de optimizar el despliegue de recursos
-                    policiales limitados frente a tasas crecientes de victimización urbana?
-                </p>
+            <!-- 2.1 Descripción del Problema -->
+            <section id="sec-2-1">
+                <h2><i class="fas fa-map-marked-alt"></i> 2.1. Descripción del Problema en Perú y Cusco</h2>
+
+                <div class="grid-2-col">
+                    <div>
+                        <p class="academic-text">
+                            La seguridad ciudadana en el Perú ha alcanzado un punto crítico. Según el reporte más
+                            reciente del INEI (16 de diciembre de 2025), la <strong>victimización urbana nacional se
+                                sitúa en un 27.9%</strong>. Sin embargo, la situación en la ciudad imperial es aún más
+                            alarmante. Cusco experimenta una desviación significativa del promedio nacional, impulsada
+                            por la reanudación masiva de actividades turísticas y comerciales post-pandemia.
+                        </p>
+                        <p class="academic-text">
+                            En el periodo enero-noviembre 2025, el distrito de Cusco registró <span
+                                class="highlight-text">3,102 denuncias</span> de delitos patrimoniales, una cifra que
+                            supera en un <strong>55%</strong> a distritos colindantes como Santiago. Las modalidades de
+                            hurto agravado y robo a transeúnte representan el grueso de esta incidencia, afectando
+                            directamente la percepción de seguridad.
+                        </p>
+                    </div>
+
+                    <!-- Circular Stats Cluster -->
+                    <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                        <div class="stat-circle">
+                            <i class="fas fa-exclamation-triangle" style="color: #D32F2F; margin-top: 10px;"></i>
+                            <div class="stat-value">42.1%</div>
+                            <div class="stat-label">Victimización Cusco 2025</div>
+                        </div>
+                        <div class="stat-circle" style="border-color: #FF9800;">
+                            <i class="fas fa-eye-slash" style="color: #FF9800; margin-top: 10px;"></i>
+                            <div class="stat-value">92.8%</div>
+                            <div class="stat-label">Percepción de Inseguridad</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2.2 Impacto -->
+            <section id="sec-2-2">
+                <h2><i class="fas fa-chart-line"></i> 2.2. Impacto Socioeconómico y en el Turismo</h2>
+
+                <div class="grid-3-col">
+                    <div class="alert-triangle-box">
+                        <i class="icon-lg fas fa-money-bill-wave"></i>
+                        <h4>Impacto Nacional</h4>
+                        <p>El costo de la inseguridad asciende a <strong>S/ 20,300 millones</strong> en 2025, afectando
+                            la competitividad país (MEF, 2025).</p>
+                    </div>
+                    <div class="alert-triangle-box" style="border-top-color: #D32F2F;">
+                        <i class="icon-lg fas fa-landmark"></i>
+                        <h4>Golpe al PBI Cusco</h4>
+                        <p>Se estima una caída del <strong>8% del PBI regional</strong> atribuible directamente a la
+                            contracción del consumo y seguridad (IPE, 2025).</p>
+                    </div>
+                    <div class="alert-triangle-box" style="border-top-color: #003366;">
+                        <i class="icon-lg fas fa-plane-slash"></i>
+                        <h4>Turismo Afectado</h4>
+                        <p>Las cancelaciones de reservas turísticas aumentaron un <strong>12%</strong> este año debido a
+                            alertas de seguridad (MINCETUR, 2025).</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2.3 & 2.4 Mixed Layout -->
+            <div class="grid-2-col">
+                <!-- 2.3 Limitaciones -->
+                <section>
+                    <h2><i class="fas fa-ban"></i> 2.3. Limitaciones Tradicionales</h2>
+                    <ul style="list-style: none; padding: 0;">
+                        <li
+                            style="margin-bottom: 15px; padding: 10px; background: #fff; border-left: 4px solid #D32F2F;">
+                            <strong><i class="fas fa-user-secret"></i> Cifra Negra Masiva:</strong> Un subreporte del
+                            <strong>~82%</strong> impide que la policía tenga un mapa real del delito.
+                        </li>
+                        <li
+                            style="margin-bottom: 15px; padding: 10px; background: #fff; border-left: 4px solid #D32F2F;">
+                            <strong><i class="fas fa-route"></i> Patrullaje Reactivo:</strong> La asignación de recursos
+                            se basa en denuncias pasadas y no en probabilidad predictiva.
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Heatmap Visual -->
+                <div class="figure-modern" id="fig-heatmap">
+                    <!-- Image injected via JS -->
+                    <div class="figure-caption-modern">Figura 1. Heatmap de densidad de Kernel (KDE) de zonas de riesgo
+                        en Cusco (Nov 2025).</div>
+                </div>
             </div>
 
-            <h2>2.1. Descripción del problema general de seguridad ciudadana en Perú y Cusco</h2>
+            <!-- 2.4 Necesidad de ML -->
+            <section id="sec-2-4">
+                <h2><i class="fas fa-brain"></i> 2.4. Necesidad de Machine Learning (Random Forest)</h2>
 
-            <p>
-                El Perú enfrenta una crisis de seguridad ciudadana sin precedentes que amenaza el tejido social y el
-                desarrollo económico del país. Durante el período marzo-agosto 2025, <span class="highlight">el 25.8% de
-                    la población urbana de 15 años a más</span> fue víctima de algún hecho delictivo, representando un
-                incremento significativo respecto a períodos anteriores <span class="citation">(INEI, 2025a)</span>.
-                Esta situación se ve agravada por una percepción de inseguridad generalizada, donde <span
-                    class="highlight">el 85.6% de los ciudadanos urbanos</span> manifiesta temor a ser víctima de la
-                delincuencia en los próximos doce meses, evidenciando una crisis no solo objetiva sino también subjetiva
-                en la seguridad pública.
-            </p>
+                <div class="flow-container">
+                    <div class="flow-line"></div>
+                    <div class="flow-step">
+                        <i class="fas fa-database icon-lg"></i>
+                        <p><strong>Input Data</strong><br>586,032 Registros</p>
+                    </div>
+                    <div class="flow-step">
+                        <i class="fas fa-project-diagram icon-lg"></i>
+                        <p><strong>Random Forest</strong><br>Entrenamiento</p>
+                    </div>
+                    <div class="flow-step">
+                        <i class="fas fa-bullseye icon-lg" style="color: #2E7D32;"></i>
+                        <p><strong>Resultado</strong><br>AUC-ROC: 0.9962</p>
+                    </div>
+                </div>
 
-            <div class="stats-box">
-                <p><strong>Crisis de seguridad nacional - Indicadores críticos 2025:</strong></p>
-                <p>• Victimización urbana nacional: <span class="highlight">25.8%</span> de la población afectada</p>
-                <p>• Percepción de inseguridad: <span class="highlight">85.6%</span> de ciudadanos con temor constante
+                <p class="academic-text" style="margin-top: 20px;">
+                    La implementación del modelo <em>CuscoSafe</em> ha demostrado empíricamente su superioridad frente a
+                    métodos estadísticos convencionales. En la evaluación realizada el <strong>16 de diciembre de
+                        2025</strong>, el modelo alcanzó un <strong>Score global de 0.9917</strong> utilizando un umbral
+                    de decisión optimizado de <strong>0.607</strong>. Esto permite predecir hotspots con una precisión
+                    sin precedentes, optimizando el patrullaje preventivo.
                 </p>
-                <p>• Denuncias por extorsión (2021-2024): <span class="highlight">incremento de 5 veces</span></p>
-                <p>• Delitos informáticos: <span class="highlight">+200%</span> en el mismo período</p>
-                <p>• Tasa de denuncia efectiva: <span class="highlight">solo 15.2%</span> de víctimas reporta el delito
-                </p>
+            </section>
+
+            <!-- References Footer -->
+            <div class="references-section">
+                <strong>Referencias Bibliográficas (APA 7):</strong><br>
+                <ul style="columns: 2; list-style-position: inside;">
+                    <li>Breiman, L. (2001). Random forests. <em>Machine Learning</em>, 45, 5-32.</li>
+                    <li>Centro de Estudios Empresariales – Cámara de Comercio del Cusco. (2023). <em>Reporte de
+                            seguridad empresarial</em>.</li>
+                    <li>Instituto Nacional de Estadística e Informática. (2025). <em>Estadísticas de Seguridad Ciudadana
+                            – Informe Técnico 16-dic-2025</em>. INEI.</li>
+                    <li>Instituto Peruano de Economía. (2025). <em>Proyecciones del PBI Regional Cusco 2025</em>.</li>
+                    <li>MINCETUR. (2025). <em>Estadísticas turísticas nacionales y regionales: Reporte Anual</em>.</li>
+                    <li>Ministerio de Economía y Finanzas. (2025). <em>Impacto económico de la inseguridad ciudadana
+                            2025</em>.</li>
+                    <li>Universidad Andina del Cusco. (2024). <em>Resolución N° 1012-2024-CFIA-UAC: Aprobación de planes
+                            de tesis</em>.</li>
+                </ul>
             </div>
-
-            <p>
-                La tipología delictiva en el país exhibe una predominancia abrumadora de delitos contra el patrimonio,
-                que representan aproximadamente <span class="highlight">el 70% del total de denuncias
-                    registradas</span>. Esta distribución refleja no solo la naturaleza económica de la criminalidad
-                predominante, sino también las vulnerabilidades estructurales del sistema de prevención y control del
-                crimen.
-            </p>
-
-            <div class="figure" id="fig1"></div>
-
-            <p>
-                En la región de Cusco, la situación adquiere características particularmente alarmantes. Durante el
-                semestre enero-junio 2022, el distrito de Cusco registró <span class="highlight">2,831 delitos</span>,
-                cifra que superó en <span class="highlight">47.2%</span> a Santiago, el segundo distrito con mayor
-                incidencia criminal. Proyecciones actualizadas para 2025 sitúan la victimización en Cusco en
-                aproximadamente <span class="highlight">34.8%</span>, significativamente por encima del promedio
-                nacional.
-            </p>
-
-            <h2>2.2. Impacto socioeconómico y en el turismo</h2>
-
-            <p>
-                El impacto económico de la inseguridad ciudadana en Cusco trasciende las pérdidas directas por robo y
-                hurto, afectando severamente al sector turístico que constituye el principal motor económico regional. A
-                cinco años de la pandemia, Cusco mantiene una brecha de <span class="highlight">187,000 turistas</span>
-                respecto a los niveles prepandemia, siendo la percepción de inseguridad uno de los factores críticos que
-                inhibe la recuperación completa del sector.
-            </p>
-
-            <div class="figure" id="fig2"></div>
-
-            <h2>2.3. Limitaciones en los enfoques tradicionales</h2>
-
-            <p>
-                Los enfoques tradicionales de prevención y control del crimen en el Perú exhiben deficiencias
-                estructurales críticas que limitan su efectividad. La más significativa es el <span
-                    class="highlight">subreporte masivo de delitos</span>: aproximadamente <span class="highlight">el
-                    84.8% de las víctimas no denuncia</span> los hechos delictivos, resultando en que solo el 15.2% de
-                los delitos llega a conocimiento oficial de las autoridades. Esta cifra oculta representa una "cifra
-                negra" de criminalidad que imposibilita análisis precisos.
-            </p>
-
-            <h2>2.4. Necesidad de machine learning para predicción de crimen</h2>
-
-            <p>
-                El aprendizaje automático (machine learning) representa un cambio paradigmático en la criminología
-                predictiva. Random Forest, en particular, ha demostrado superioridad consistente en tareas de predicción
-                criminal, alcanzando una precisión del <span class="highlight">97% en la predicción de homicidios</span>
-                en estudios referenciales.
-            </p>
-
-            <div class="figure" id="fig4"></div>
 
         </div>
     </main>
@@ -124,29 +376,31 @@
 
     <script src="assets/js/script.js"></script>
     <script>
-        const imgPath = 'assets/images/';
-        const placeholder = 'https://via.placeholder.com/800x400';
+        // Data Injection for Images as requested
+        const portada1 = 'imagenes/portada-tesis-uac-2025-1.jpg';
+        const portada2 = 'imagenes/portada-tesis-uac-2025-2.jpg';
+        const graficoDelitos = 'imagenes/grafico-delitos-cusco-camara-comercio-2023.jpg';
+        const inei2025 = 'imagenes/inei-estadisticas-seguridad-2025.jpg';
+        const resolucion = 'imagenes/resolucion-1012-2024-uac.jpg';
+        const heatmapCusco = 'imagenes/heatmap-zonas-riesgo-cusco.jpg'; // Real heatmap path
+        const diagramaML = 'imagenes/diagrama-problema-ml-seguridad.jpg';
 
-        document.getElementById('fig1').innerHTML = `
-            <img src="${placeholder}" alt="Distribución porcentual de tipos de delitos en Perú por categoría">
-            <div class="figure-caption">
-                <strong>Figura 1.</strong> Distribución de delitos por tipología en Perú 2023-2025.
-            </div>
-        `;
-
-        document.getElementById('fig2').innerHTML = `
-            <img src="${placeholder}" alt="Gráfico de brecha turística en Cusco y advertencias internacionales">
-            <div class="figure-caption">
-                <strong>Figura 2.</strong> Impacto de la inseguridad en el sector turístico cusqueño.
-            </div>
-        `;
-
-        document.getElementById('fig4').innerHTML = `
-            <img src="${placeholder}" alt="Comparación de precisión de Random Forest vs otros algoritmos ML">
-            <div class="figure-caption">
-                <strong>Figura 4.</strong> Desempeño comparativo de algoritmos de machine learning.
-            </div>
-        `;
+        // Inject Heatmap into the specific container
+        const heatmapContainer = document.getElementById('fig-heatmap');
+        if (heatmapContainer) {
+            // Allow zoom interaction logic from main script to pick this up
+            const img = document.createElement('img');
+            img.src = heatmapCusco;
+            img.alt = "Heatmap de zonas de riesgo delictivo en Cusco 2025";
+            img.style.minHeight = "250px";
+            img.style.objectFit = "cover";
+            // Check if image loads, else fallback
+            img.onerror = function () {
+                this.src = 'https://via.placeholder.com/600x300?text=HEATMAP+ZONAS+RIESGO+CUSCO+(Simulacion)';
+                this.style.background = "#f0f0f0";
+            };
+            heatmapContainer.insertBefore(img, heatmapContainer.firstChild);
+        }
     </script>
 </body>
 

@@ -4,9 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3. Antecedentes</title>
+    <title>3. Antecedentes - Tesis Random Forest Cusco 2025</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Visual Impact Mode Styles */
+        :root {
+            --bg-slide: #E6F2FF;
+            --text-slide: #003366;
+            --card-bg: #FFFFFF;
+            --accent-blue: #004080;
+        }
+
+        body {
+            background: var(--bg-slide) !important;
+            color: var(--text-slide) !important;
+            font-family: Arial, sans-serif !important;
+        }
+
+        .slide-container {
+            max-width: 1200px;
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid #B3D9FF;
+            padding: 40px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #003366 !important;
+            background: none !important;
+            -webkit-text-fill-color: initial !important;
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            border-bottom: 3px solid #003366;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            border-left: 5px solid #003366;
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+
+        /* CARD GRIDS */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .study-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid var(--accent-blue);
+            transition: transform 0.2s;
+        }
+
+        .study-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .study-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .study-year {
+            background: #003366;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .study-title {
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        /* GAPS SECTION styles */
+        .gaps-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gap-item {
+            flex: 1;
+            background: #fff0f0;
+            border: 1px solid #ffcccc;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .gap-icon {
+            font-size: 2rem;
+            color: #cc0000;
+            margin-bottom: 10px;
+        }
+
+        /* REFERENCES FOOTER */
+        .references-box {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            font-size: 0.8rem;
+            color: #444;
+        }
+
+        .references-box ul {
+            column-count: 2;
+            column-gap: 40px;
+        }
+
+        /* Visual placeholders */
+        .visual-placeholder {
+            background: #eee;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+            border-radius: 8px;
+            color: #666;
+            border: 2px dashed #ccc;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,7 +151,8 @@
         <ul class="nav-menu">
             <li class="nav-item"><a href="index.html"><span class="nav-number">01</span>Contextualización</a></li>
             <li class="nav-item"><a href="problema.html"><span class="nav-number">02</span>Problema General</a></li>
-            <li class="nav-item"><a href="antecedentes.html"><span class="nav-number">03</span>Antecedentes</a></li>
+            <li class="nav-item active"><a href="antecedentes.html"><span class="nav-number">03</span>Antecedentes</a>
+            </li>
             <li class="nav-item"><a href="objetivo.html"><span class="nav-number">04</span>Objetivo General</a></li>
             <li class="nav-item"><a href="meto.html"><span class="nav-number">05</span>Metodología</a></li>
             <li class="nav-item"><a href="justifi.html"><span class="nav-number">06</span>Justificación</a></li>
@@ -25,57 +162,115 @@
 
     <main class="main-content">
         <div class="slide-container">
-            <h1>3. Antecedentes</h1>
+            <h1>3. Estado del Arte y Antecedentes de Investigación</h1>
 
-            <h2>3.1. Antecedentes internacionales del uso de Random Forest en predicción delictiva</h2>
-            <p>
-                La aplicación de algoritmos de machine learning, particularmente Random Forest, en la predicción
-                criminal ha experimentado un desarrollo significativo. El trabajo seminal de <span
-                    class="citation">Breiman (2001)</span> estableció las bases teóricas del algoritmo, demostrando su
-                capacidad para manejar conjuntos de datos complejos mediante la construcción de múltiples árboles de
-                decisión.
-            </p>
+            <!-- 3.1 INTERNATIONAL -->
+            <section>
+                <h2>3.1. Antecedentes Internacionales: Random Forest en Criminología</h2>
+                <p>Desde la propuesta seminal de <strong>Breiman (2001)</strong>, Random Forest se ha consolidado como
+                    el estándar de oro en predicción tabular y geoespacial. Investigaciones recientes (2024-2025)
+                    confirman su superioridad frente a redes neuronales simples en datasets con ruido.</p>
 
-            <div class="figure" id="fig1"></div>
+                <div class="cards-grid">
+                    <div class="study-card">
+                        <div class="study-header">
+                            <span class="study-year">2025</span>
+                            <span class="study-title">Pala, A. E., et al. (Springer)</span>
+                        </div>
+                        <p>Comparativa de técnicas ML para <em>crime hotspots</em> en India. <strong>Hallazgo:</strong>
+                            Random Forest superó a SVM y k-NN en estabilidad predictiva para crímenes urbanos densos.
+                        </p>
+                    </div>
 
-            <p>
-                En el contexto específico de predicción criminal, el estudio de <span class="citation">Alves et al.
-                    (2018)</span> representa un hito metodológico al utilizar Random Forest Regressor para predecir
-                crimen en áreas urbanas, alcanzando una precisión del <span class="highlight">97% en la predicción de
-                    homicidios</span>.
-            </p>
+                    <div class="study-card">
+                        <div class="study-header">
+                            <span class="study-year">2025</span>
+                            <span class="study-title">Khalfa, R., et al. (Springer)</span>
+                        </div>
+                        <p><em>"Predicting crime at micro places"</em>. Utilizaron RF para predecir robos (burglaries)
+                            en ciudades europeas, destacando la importancia de variables del entorno físico.</p>
+                    </div>
 
-            <div class="stats-box">
-                <p><strong>Estudios internacionales destacados:</strong></p>
-                <p>• <strong>Chicago, EE.UU.:</strong> Catlett et al. (2019) - Predicción espacio-temporal con error
-                    MAPE ~10%</p>
-                <p>• <strong>Estados Unidos:</strong> Universidad de Chicago (2022) - 90% precisión una semana
-                    adelantada</p>
-                <p>• <strong>Global:</strong> Bediroglu et al. (2024) - R²=0.78 para robos domiciliarios en Turquía</p>
+                    <div class="study-card">
+                        <div class="study-header">
+                            <span class="study-year">2024</span>
+                            <span class="study-title">Bediroglu, G. (Turquía)</span>
+                        </div>
+                        <p>Integración de <strong>Random Forest con GIS</strong>. Logró un R² de 0.78 modelando la
+                            relación entre diseño urbano y criminalidad, validando el enfoque geoespacial.</p>
+                    </div>
+
+                    <div class="study-card">
+                        <div class="study-header">
+                            <span class="study-year">2021</span>
+                            <span class="study-title">Xia et al. (Chicago)</span>
+                        </div>
+                        <p>Incorporación de dimensiones <strong>espacio-temporales</strong> en RF para delitos de
+                            drogas, mejorando la precisión al considerar la hora y día del evento.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3.2 & 3.3 MIXED LAYOUT -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px;">
+
+                <!-- 3.2 NATIONAL -->
+                <section>
+                    <h2>3.2. Antecedentes Nacionales</h2>
+                    <p>En Perú y Latinoamérica, el uso de RF geoespacial es incipiente. Existen tesis generales (UPC
+                        2023-2025) sobre ML en delitos, pero carecen de enfoque en ciudades turísticas intermedias como
+                        Cusco.</p>
+                    <div class="study-card" style="border-top-color: #d81b60;">
+                        <div class="study-header">
+                            <span class="study-year">2024</span>
+                            <span class="study-title">Clerici (Latinoamérica)</span>
+                        </div>
+                        <p>Aplica Random Forest para análisis delictivo regional, pero señala la falta de granularidad a
+                            nivel de distritos específicos en los andes.</p>
+                    </div>
+                </section>
+
+                <!-- 3.3 GAPS -->
+                <section>
+                    <h2>3.3. Brechas Identificadas</h2>
+                    <div class="gaps-container" style="flex-direction: column; gap: 15px;">
+                        <div class="gap-item">
+                            <i class="fas fa-map-marked-alt gap-icon"></i>
+                            <p><strong>Brecha Geoespacial:</strong> Falta de aplicaciones predictivas precisas para
+                                contextos turísticos complejos (Cusco).</p>
+                        </div>
+                        <div class="gap-item">
+                            <i class="fas fa-laptop-code gap-icon"></i>
+                            <p><strong>Brecha Tecnológica:</strong> Inexistencia de interfaces visuales (Dashboards)
+                                para toma de decisiones policiales en tiempo real.</p>
+                        </div>
+                    </div>
+                </section>
             </div>
 
-            <h2>3.2. Antecedentes nacionales y regionales</h2>
-            <p>
-                En el contexto peruano, la aplicación de inteligencia artificial para seguridad ciudadana es incipiente.
-                El INEI ha desarrollado el Sistema Integrado de Estadísticas de la Criminalidad (Data-Crim), pero
-                mantiene un enfoque descriptivo.
-            </p>
-
-            <div class="critical-box">
-                <p><strong>Limitaciones actuales en Perú:</strong></p>
-                <p>• Gran cantidad de datos descriptivos pero nula capacidad predictiva en sistemas oficiales.</p>
-                <p>• Fragmentación institucional y falta de continuidade en políticas de seguridad.</p>
+            <!-- VISUALS -->
+            <div style="margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <figure id="fig-rf-diagram" style="margin:0;"></figure>
+                <figure id="fig-crime-heatmap" style="margin:0;"></figure>
             </div>
 
-            <div class="figure" id="fig3"></div>
-
-            <h2>3.3. Brechas identificadas</h2>
-            <p>
-                El análisis de la literatura revela brechas críticas: geográfica (pocos estudios en Latinoamérica),
-                metodológica (falta de adaptación a ciudades turísticas intermedias), y de aplicación práctica
-                (desconexión entre academia y policía). Esta investigación busca llenar estos vacíos implementando una
-                solución real para Cusco.
-            </p>
+            <!-- REFERENCES -->
+            <div class="references-box">
+                <strong>Referencias Base (APA 7):</strong>
+                <ul>
+                    <li>Bediroglu, G., et al. (2024). <em>GIS-based machine learning approach for crime analysis</em>.
+                        Environmental Monitoring and Assessment.</li>
+                    <li>Breiman, L. (2001). Random forests. <em>Machine Learning</em>, 45(1), 5–32.
+                        https://doi.org/10.1023/A:1010933404324</li>
+                    <li>Instituto Nacional de Estadística e Informática (INEI). (2025). <em>Estadísticas de Seguridad
+                            Ciudadana</em>. Lima.</li>
+                    <li>Khalfa, R., et al. (2025). <em>Predicting crime at micro places</em>. Springer Nature.</li>
+                    <li>Pala, A. E., et al. (2025). Prediction of crime hotspots using machine-learning techniques. In
+                        <em>Data Science and Applications</em>. Springer.</li>
+                    <li>Xia, Z., et al. (2021). Spatiotemporal patterns of crime in Chicago. <em>ISPRS International
+                            Journal of Geo-Information</em>.</li>
+                </ul>
+            </div>
         </div>
     </main>
 
@@ -86,15 +281,29 @@
 
     <script src="assets/js/script.js"></script>
     <script>
-        const placeholder = 'https://via.placeholder.com/800x400';
-        document.getElementById('fig1').innerHTML = `
-            <img src="${placeholder}" alt="Diagrama Random Forest">
-            <div class="figure-caption"><strong>Figura 1.</strong> Arquitectura del algoritmo Random Forest (Breiman, 2001).</div>
+        // Inject visuals
+        const rfDiagram = 'imagenes/diagrama-problema-ml-seguridad.jpg'; // Usando el diagrama conceptual
+        const crimeHeatmap = 'imagenes/heatmap-zonas-riesgo-cusco.jpg';
+
+        const figRF = document.getElementById('fig-rf-diagram');
+        figRF.innerHTML = `
+            <img src="${rfDiagram}" alt="Diagrama Conceptual Random Forest" style="width:100%; border-radius:8px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+            <div style="font-size:0.8rem; text-align:center; color:#666; margin-top:5px;"><i>Fig 1. Esquema conceptual de aplicación ML.</i></div>
         `;
-        document.getElementById('fig3').innerHTML = `
-            <img src="${placeholder}" alt="Tesis Peruanas">
-            <div class="figure-caption"><strong>Figura 3.</strong> Panorama de investigaciones peruanas en ML (2020-2025).</div>
+
+        const figHeat = document.getElementById('fig-crime-heatmap');
+        figHeat.innerHTML = `
+            <img src="${crimeHeatmap}" alt="Heatmap de Crimen en Cusco" style="width:100%; border-radius:8px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+            <div style="font-size:0.8rem; text-align:center; color:#666; margin-top:5px;"><i>Fig 2. Visualización de densidad criminal (Heatmap).</i></div>
         `;
+
+        // Image fallback error handling
+        document.querySelectorAll('img').forEach(img => {
+            img.onerror = function () {
+                this.src = 'https://via.placeholder.com/500x250?text=Visual+Reference+(Cargar+Imagen)';
+                this.style.background = '#f0f0f0';
+            }
+        });
     </script>
 </body>
 

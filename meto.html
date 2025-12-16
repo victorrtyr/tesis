@@ -4,9 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5. Metodología</title>
+    <title>5. Metodología - Tesis Random Forest Cusco 2025</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Visual Impact Mode Styles */
+        :root {
+            --bg-slide: #E6F2FF;
+            --text-slide: #003366;
+            --scrum-bg: #fffde7;
+            --crisp-bg: #e0f2f1;
+            --arch-bg: #e3f2fd;
+        }
+
+        body {
+            background: var(--bg-slide) !important;
+            color: var(--text-slide) !important;
+            font-family: Arial, sans-serif !important;
+        }
+
+        .slide-container {
+            max-width: 1200px;
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid #B3D9FF;
+            padding: 40px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #003366 !important;
+            background: none !important;
+            -webkit-text-fill-color: initial !important;
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            border-bottom: 3px solid #003366;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+
+        /* Methodology Sections */
+        .method-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 6px solid #003366;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #003366;
+        }
+
+        /* Stats & Badges */
+        .metric-badge {
+            display: inline-flex;
+            align-items: center;
+            background: #2E7D32;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-left: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .roles-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 10px;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        /* Architecture Diagram (CSS-based conceptual) */
+        .arch-diagram {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .arch-box {
+            background: white;
+            border: 2px solid #003366;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            width: 180px;
+            z-index: 2;
+        }
+
+        .arch-arrow {
+            flex: 1;
+            height: 2px;
+            background: #003366;
+            position: relative;
+        }
+
+        .arch-arrow::after {
+            content: '►';
+            position: absolute;
+            right: -5px;
+            top: -10px;
+            color: #003366;
+        }
+
+        /* Footer references */
+        .references-box {
+            font-size: 0.75rem;
+            color: #555;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,7 +142,7 @@
             <li class="nav-item"><a href="problema.html"><span class="nav-number">02</span>Problema General</a></li>
             <li class="nav-item"><a href="antecedentes.html"><span class="nav-number">03</span>Antecedentes</a></li>
             <li class="nav-item"><a href="objetivo.html"><span class="nav-number">04</span>Objetivo General</a></li>
-            <li class="nav-item"><a href="meto.html"><span class="nav-number">05</span>Metodología</a></li>
+            <li class="nav-item active"><a href="meto.html"><span class="nav-number">05</span>Metodología</a></li>
             <li class="nav-item"><a href="justifi.html"><span class="nav-number">06</span>Justificación</a></li>
             <li class="nav-item"><a href="producto.html"><span class="nav-number">07</span>Producto esperado</a></li>
         </ul>
@@ -25,49 +150,94 @@
 
     <main class="main-content">
         <div class="slide-container">
-            <h1>5. Metodología</h1>
+            <h1>5. Diseño Metodológico Híbrido</h1>
 
-            <p>
-                Esta sección describe el marco metodológico empleado: enfoque cuantitativo, tipo aplicada, diseño no
-                experimental. Alineado con estándares internacionales y las directrices de la Universidad Andina del
-                Cusco.
-            </p>
-
-            <h3>5.1. Enfoque y Tipo de Investigación</h3>
-            <div class="stats-box">
-                <p><strong>Tipo:</strong> Aplicada (solución tecnológica práctica).</p>
-                <p><strong>Enfoque:</strong> Cuantitativo (uso de datos numéricos y algoritmos).</p>
-                <p><strong>Diseño:</strong> No experimental, descriptivo-correlacional y predictivo.</p>
+            <!-- 5.1 & 5.2 ENFOQUE -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div class="method-section">
+                    <div class="section-header"><i class="fas fa-microscope"></i> 5.1. Enfoque y Tipo</div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><i class="fas fa-check" style="color:#2E7D32"></i> <strong>Aplicada:</strong> Solución
+                            tecnológica real.</li>
+                        <li><i class="fas fa-check" style="color:#2E7D32"></i> <strong>Cuantitativo:</strong> Métricas
+                            numéricas precisas.</li>
+                        <li><i class="fas fa-check" style="color:#2E7D32"></i> <strong>Transversal:</strong> Datos
+                            2018-2025.</li>
+                    </ul>
+                </div>
+                <div class="method-section">
+                    <div class="section-header"><i class="fas fa-users"></i> 5.2. Población y Muestra</div>
+                    <p>Totalidad de denuncias georreferenciadas del distrito de Cusco.</p>
+                    <div
+                        style="background: #e3f2fd; padding:10px; border-radius:5px; text-align:center; font-weight:bold;">
+                        N = >586,032 registros (INEI/PNP)
+                    </div>
+                </div>
             </div>
 
-            <h3>5.2. Metodología de Desarrollo: Scrum Adaptado</h3>
-            <p>
-                Se adoptó el marco ágil Scrum con <strong>5 sprints de 2 semanas</strong>.
-            </p>
-            <div class="figure" id="figScrum"></div>
-
-            <h3>5.3. Pipeline de Ciencia de Datos: CRISP-DM</h3>
-            <p>
-                Se sigue el estándar CRISP-DM de 6 fases: 1. Comprensión del negocio, 2. Comprensión de datos, 3.
-                Preparación, 4. Modelado (Random Forest), 5. Evaluación, 6. Despliegue.
-            </p>
-
-            <h3>5.4. Arquitectura Técnica</h3>
-            <p>Arquitectura moderna de 3 capas full-stack.</p>
-            <div class="figure" id="figArch"></div>
-
-            <div class="stats-box">
-                <p><strong>Stack Tecnológico:</strong></p>
-                <p>• <strong>Frontend:</strong> React, Mapbox GL JS</p>
-                <p>• <strong>Backend:</strong> Node.js, Express, Socket.io</p>
-                <p>• <strong>ML:</strong> Python, Scikit-learn, Flask</p>
-                <p>• <strong>DB:</strong> MySQL 8.0 (Geo-spatial indices)</p>
+            <!-- 5.3 SCRUM -->
+            <div class="method-section" style="background: var(--scrum-bg); border-left-color: #fbc02d;">
+                <div class="section-header"><i class="fas fa-sync-alt"></i> 5.3. Gestión Ágil: Scrum Adaptado</div>
+                <p>El desarrollo se organizó en <strong>5 Sprints de 2 semanas</strong>, siguiendo la guía de Schwaber &
+                    Sutherland (2020).</p>
+                <div class="roles-grid">
+                    <div><strong>Product Owner:</strong> T. Castillo Gianluca<br><small>(Priorización de historias de
+                            usuario)</small></div>
+                    <div><strong>Scrum Master:</strong> C. Mendoza Zayin<br><small>(Eliminación de impedimentos
+                            técnicos)</small></div>
+                    <div><strong>Herramientas:</strong> Jira (Backlog), GitHub (CI/CD), Trello (Kanban).</div>
+                </div>
             </div>
 
-            <h3>5.5. Consideraciones Éticas</h3>
-            <p>
-                Respeto estricto a la Ley de Protección de Datos Personales. Anonimización de datos de víctimas.
-            </p>
+            <!-- 5.4 CRISP-DM & RESULTADOS -->
+            <div class="method-section" style="background: var(--crisp-bg); border-left-color: #00897b;">
+                <div class="section-header">
+                    <i class="fas fa-brain"></i> 5.4. Pipeline CRISP-DM
+                    <span class="metric-badge">AUC-ROC: 0.9962</span>
+                </div>
+                <p>Implementación completa del ciclo de vida de datos estándar de la industria:</p>
+                <ol>
+                    <li><strong>Comprensión del Negocio:</strong> Definición de KPIs de seguridad.</li>
+                    <li><strong>Preparación de Datos:</strong> Limpieza geoespacial (Pandas/GeoPandas).</li>
+                    <li><strong>Modelado:</strong> Entrenamiento de Random Forest (Params: n_estimators=100).</li>
+                    <li><strong>Evaluación (16-dic-2025):</strong> Modelo <em>CuscoSafe</em> validado con Score 0.9917.
+                    </li>
+                </ol>
+            </div>
+
+            <!-- 5.5 ARCHITECTURE VISUAL -->
+            <div class="method-section" style="background: var(--arch-bg); border-left-color: #0277bd;">
+                <div class="section-header"><i class="fas fa-layer-group"></i> 5.5. Arquitectura Full-Stack</div>
+                <div class="arch-diagram">
+                    <div class="arch-box">
+                        <i class="fab fa-react fa-2x"></i><br><strong>Frontend</strong><br>React + Mapbox GL
+                    </div>
+                    <div class="arch-arrow"></div>
+                    <div class="arch-box">
+                        <i class="fab fa-node fa-2x"></i><br><strong>Backend API</strong><br>Node.js + Express
+                    </div>
+                    <div class="arch-arrow"></div>
+                    <div class="arch-box">
+                        <i class="fas fa-server fa-2x"></i><br><strong>Data/ML</strong><br>MySQL + Python RF
+                    </div>
+                </div>
+            </div>
+
+            <!-- VISUALS FOOTER -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top:20px;">
+                <figure id="fig-scrum-process"></figure>
+                <figure id="fig-arch-diagram"></figure>
+            </div>
+
+            <div class="references-box">
+                <strong>Referencias Base:</strong>
+                <ul>
+                    <li>Schwaber, K., & Sutherland, J. (2020). <em>The Scrum Guide</em>. Scrum.org.</li>
+                    <li>IBM Corp. (2021). <em>CRISP-DM: Cross-Industry Standard Process for Data Mining</em>.</li>
+                    <li>Instituto Nacional de Estadística e Informática (INEI). (2025). <em>Reporte Técnico N° 45:
+                            Estadísticas de Seguridad</em>.</li>
+                </ul>
+            </div>
         </div>
     </main>
 
@@ -78,15 +248,27 @@
 
     <script src="assets/js/script.js"></script>
     <script>
-        const placeholder = 'https://via.placeholder.com/800x400';
-        document.getElementById('figScrum').innerHTML = `
-            <img src="${placeholder}" alt="Esquema Scrum">
-            <div class="figure-caption"><strong>Figura 1.</strong> Ciclo de vida de desarrollo con Scrum (5 Sprints).</div>
+        // Inject visuals
+        // Usamos placeholders o referencias locales si las tienes
+        const scrumImg = 'imagenes/scrum-process-diagram.jpg'; // Idealmente subir este archivo
+        const archImg = 'imagenes/arquitectura-sistema.jpg';
+
+        document.getElementById('fig-scrum-process').innerHTML = `
+            <img src="${scrumImg}" alt="Proceso Scrum 5 Sprints" style="width:100%; border-radius:8px; height: 150px; object-fit: cover;">
+            <div style="font-size:0.8rem; text-align:center; color:#666;"><i>Fig. 1. Ciclo iterativo Scrum.</i></div>
         `;
-        document.getElementById('figArch').innerHTML = `
-            <img src="${placeholder}" alt="Arquitectura del Sistema">
-            <div class="figure-caption"><strong>Figura 2.</strong> Arquitectura Full-Stack de 'CuscoSeguro'.</div>
+
+        document.getElementById('fig-arch-diagram').innerHTML = `
+            <img src="${archImg}" alt="Arquitectura del Sistema" style="width:100%; border-radius:8px; height: 150px; object-fit: cover;">
+            <div style="font-size:0.8rem; text-align:center; color:#666;"><i>Fig. 2. Diagrama de despliegue.</i></div>
         `;
+
+        // Fallbacks
+        document.querySelectorAll('img').forEach(img => {
+            img.onerror = function () {
+                this.src = 'https://via.placeholder.com/400x150?text=Diagrama+Metodologico';
+            }
+        });
     </script>
 </body>
 

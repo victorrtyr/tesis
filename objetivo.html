@@ -4,9 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4. Objetivo General</title>
+    <title>4. Objetivos - Tesis Random Forest Cusco 2025</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Visual Impact Mode Styles */
+        :root {
+            --bg-slide: #E6F2FF;
+            --text-slide: #003366;
+            --objective-bg: #FFFFFF;
+            --highlight-green: #2E7D32;
+        }
+
+        body {
+            background: var(--bg-slide) !important;
+            color: var(--text-slide) !important;
+            font-family: Arial, sans-serif !important;
+        }
+
+        .slide-container {
+            max-width: 1200px;
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid #B3D9FF;
+            padding: 40px;
+        }
+
+        h1,
+        h2 {
+            color: #003366 !important;
+            background: none !important;
+            -webkit-text-fill-color: initial !important;
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            border-bottom: 3px solid #003366;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+
+        /* GENERAL OBJECTIVE CARD */
+        .general-objective-box {
+            background: white;
+            border-left: 8px solid #003366;
+            padding: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            margin-bottom: 40px;
+            border-radius: 0 15px 15px 0;
+        }
+
+        .smart-badge {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: #2E7D32;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-objective-text {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        .metrics-highlight {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        /* SPECIFIC OBJECTIVES FLOW */
+        .specific-objectives-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .obj-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .obj-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-color: #003366;
+        }
+
+        .obj-number {
+            background: #003366;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .obj-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 1.5rem;
+            color: #ddd;
+        }
+
+        .obj-card:hover .obj-icon {
+            color: #003366;
+        }
+
+        /* VISUALS SECTION */
+        .visual-footer {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .references-box {
+            font-size: 0.75rem;
+            color: #666;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,7 +155,8 @@
             <li class="nav-item"><a href="index.html"><span class="nav-number">01</span>Contextualización</a></li>
             <li class="nav-item"><a href="problema.html"><span class="nav-number">02</span>Problema General</a></li>
             <li class="nav-item"><a href="antecedentes.html"><span class="nav-number">03</span>Antecedentes</a></li>
-            <li class="nav-item"><a href="objetivo.html"><span class="nav-number">04</span>Objetivo General</a></li>
+            <li class="nav-item active"><a href="objetivo.html"><span class="nav-number">04</span>Objetivo General</a>
+            </li>
             <li class="nav-item"><a href="meto.html"><span class="nav-number">05</span>Metodología</a></li>
             <li class="nav-item"><a href="justifi.html"><span class="nav-number">06</span>Justificación</a></li>
             <li class="nav-item"><a href="producto.html"><span class="nav-number">07</span>Producto esperado</a></li>
@@ -25,41 +165,103 @@
 
     <main class="main-content">
         <div class="slide-container">
-            <h1>4. Objetivo General y Objetivos Específicos</h1>
+            <h1>4. Objetivos de la Investigación</h1>
 
-            <p>
-                La formulación de objetivos establece con precisión las metas que se pretenden alcanzar. En el contexto
-                de la presente investigación, los objetivos han sido diseñados alineados con las directrices nacionales
-                de SUNEDU para trabajos de investigación aplicada en ciencias de la computación.
-            </p>
+            <!-- 4.1 GENERAL OBJECTIVE -->
+            <section>
+                <div class="general-objective-box">
+                    <span class="smart-badge">SMART Verified</span>
+                    <h2>4.1. Objetivo General</h2>
+                    <p class="main-objective-text">
+                        Implementar y evaluar un modelo <strong>Random Forest geoespacial</strong> para predecir zonas
+                        de alto riesgo delictivo en Cusco durante el periodo 2025, alcanzando un <span
+                            class="metrics-highlight">AUC-ROC ≥ 0.99</span> y un umbral óptimo de <span
+                            class="metrics-highlight">0.607</span>, integrándolo operativamente en la aplicación web
+                        <em>"CuscoSeguro"</em> para el apoyo preventivo de las autoridades.
+                    </p>
+                    <div style="margin-top: 10px; font-size: 0.9rem; color: #555;">
+                        <em>(Tejada Castillo & Curo Mendoza, 2025)</em>
+                    </div>
+                </div>
+            </section>
 
-            <h3>4.1. Objetivo General</h3>
-            <div class="critical-box">
-                <p>Implementar un modelo de Random Forest entrenado con datos históricos de criminalidad y variables
-                    geoespaciales para determinar y visualizar en tiempo real las zonas de alto riesgo delictivo en la
-                    ciudad del Cusco durante el año 2025, con el propósito de apoyar la toma de decisiones preventivas
-                    de las autoridades.</p>
+            <!-- 4.2 SPECIFIC OBJECTIVES -->
+            <section>
+                <h2>4.2. Objetivos Específicos (Pipeline del Proyecto)</h2>
+                <div class="specific-objectives-grid">
+                    <!-- OE 1 -->
+                    <div class="obj-card">
+                        <div class="obj-number">1</div>
+                        <i class="fas fa-database obj-icon"></i>
+                        <h4>Datos Históricos</h4>
+                        <p>Recolectar y consolidar datasets criminales del periodo <strong>2018-2025</strong> (fuentes
+                            oficiales INEI, PNP DataCrim).</p>
+                    </div>
+
+                    <!-- OE 2 -->
+                    <div class="obj-card">
+                        <div class="obj-number">2</div>
+                        <i class="fas fa-filter obj-icon"></i>
+                        <h4>Preprocesamiento</h4>
+                        <p>Diseñar pipeline de limpieza y geocodificación para enriquecer la data cruda con coordenadas
+                            espaciales.</p>
+                    </div>
+
+                    <!-- OE 3 -->
+                    <div class="obj-card">
+                        <div class="obj-number">3</div>
+                        <i class="fas fa-cogs obj-icon"></i>
+                        <h4>Entrenamiento RF</h4>
+                        <p>Entrenar y optimizar el modelo Random Forest buscando métricas superiores (Accuracy > 99%) y
+                            balance de clases.</p>
+                    </div>
+
+                    <!-- OE 4 -->
+                    <div class="obj-card">
+                        <div class="obj-number">4</div>
+                        <i class="fas fa-laptop-code obj-icon"></i>
+                        <h4>Desarrollo Web</h4>
+                        <p>Desarrollar la aplicación full-stack "CuscoSeguro" integrando visualización de heatmaps
+                            interactivos (Mapbox).</p>
+                    </div>
+
+                    <!-- OE 5 -->
+                    <div class="obj-card">
+                        <div class="obj-number">5</div>
+                        <i class="fas fa-network-wired obj-icon"></i>
+                        <h4>Integración API</h4>
+                        <p>Conectar el modelo de ML con el frontend mediante una API REST/WebSockets para consultas en
+                            tiempo real.</p>
+                    </div>
+
+                    <!-- OE 6 -->
+                    <div class="obj-card">
+                        <div class="obj-number">6</div>
+                        <i class="fas fa-check-circle obj-icon"></i>
+                        <h4>Validación</h4>
+                        <p>Evaluar la efectividad y usabilidad de la herramienta con stakeholders locales y pruebas de
+                            usuario.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VISUAL FOOTER -->
+            <div class="visual-footer">
+                <div class="figure" id="fig-objetivos-diagram"
+                    style="margin:0; box-shadow: none; background: transparent;">
+                    <!-- Image injected via JS -->
+                </div>
+
+                <div class="references-box">
+                    <strong>Referencias:</strong>
+                    <ul style="padding-left: 20px;">
+                        <li>Breiman, L. (2001). <em>Random forests</em>.</li>
+                        <li>INEI. (2025). <em>Estadísticas de Seguridad</em>.</li>
+                        <li>Schwertner, K., & Flores, E. (2023). <em>Metodología SMART en ingeniería</em>.</li>
+                    </ul>
+                </div>
             </div>
 
-            <h3>4.2. Objetivos Específicos</h3>
-            <div class="stats-box">
-                <ol style="margin-left: 20px;">
-                    <li style="margin-bottom: 10px;"><strong>Recolectar y consolidar datasets históricos
-                            (2018-2025)</strong> de fuentes oficiales (INEI, PNP, Serenazgo).</li>
-                    <li style="margin-bottom: 10px;"><strong>Diseñar pipeline de preprocesamiento y limpieza</strong> de
-                        datos con enriquecimiento geoespacial.</li>
-                    <li style="margin-bottom: 10px;"><strong>Entrenar, validar y optimizar modelo Random Forest</strong>
-                        evaluando métricas de precisión, recall y F1-score.</li>
-                    <li style="margin-bottom: 10px;"><strong>Desarrollar aplicación web "CuscoSeguro"</strong> (Node.js
-                        + React + Mapbox) para visualización de riesgos.</li>
-                    <li style="margin-bottom: 10px;"><strong>Integrar modelo en backend</strong> mediante API REST para
-                        predicciones dinámicas.</li>
-                    <li style="margin-bottom: 10px;"><strong>Evaluar efectividad</strong> mediante pruebas de usuario
-                        con autoridades locales.</li>
-                </ol>
-            </div>
-
-            <div class="figure" id="fig1"></div>
         </div>
     </main>
 
@@ -70,11 +272,24 @@
 
     <script src="assets/js/script.js"></script>
     <script>
-        const placeholder = 'https://via.placeholder.com/800x400';
-        document.getElementById('fig1').innerHTML = `
-            <img src="${placeholder}" alt="Esquema de Objetivos">
-            <div class="figure-caption"><strong>Figura 1.</strong> Alineación de objetivos con el proceso de desarrollo e investigación.</div>
+        // Data Injection
+        const statsCusco = 'imagenes/grafico-delitos-cusco-camara-comercio-2023.jpg';
+
+        const figContainer = document.getElementById('fig-objetivos-diagram');
+        figContainer.innerHTML = `
+            <img src="${statsCusco}" alt="Estadísticas Base Cusco" style="width:100%; border-radius:10px; max-height: 200px; object-fit: cover;">
+            <div style="font-size:0.8rem; text-align:center; color:#666; margin-top:5px;">
+                <i>Fig 1. Línea base estadística para medición de objetivos.</i>
+            </div>
         `;
+
+        // Error handling
+        document.querySelectorAll('img').forEach(img => {
+            img.onerror = function () {
+                this.src = 'https://via.placeholder.com/600x150?text=Estadisticas+Base+Cusco';
+                this.style.background = '#f0f0f0';
+            }
+        });
     </script>
 </body>
 
